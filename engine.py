@@ -1,0 +1,17 @@
+class Colours:
+    def __init__(self):
+        self.white         = (255, 255, 255)
+        self.black         = (0  ,   0,   0)
+        self.red           = (255,   0,   0)
+        self.green         = (0  , 255,   0)
+        self.blue          = (0  ,   0, 255)
+        self.lightskyblue  = (146, 244, 255)
+        self.skyblue       = (  0, 191, 255)
+        self.purple        = ( 50,  50, 130)
+        self.grey          = (140, 140, 140)
+        self.brown         = (172,  90,   0)
+        self.cyan          = (  0, 255, 255)
+        self.yellow        = (255, 255,   0)
+        self.darkgreen     = (  7,  80,  75)
+        self.midgreen      = (  9,  91,  85)
+        self.brightgreen   = ( 14, 222, 150)
