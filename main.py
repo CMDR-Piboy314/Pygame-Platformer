@@ -1,4 +1,4 @@
-# Programmed by Piboy314 (Test of dev branch)
+# Programmed by Piboy314 (Test of main branch)
 
 # Import libraries
 import pygame, sys, time, engine
