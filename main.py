@@ -1,4 +1,4 @@
-# Programmed by Henry Le Roux
+# Programmed by Piboy314
 
 # Import libraries
 import pygame, sys, time, engine
