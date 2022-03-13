@@ -183,12 +183,12 @@ while True: # Game loop
             WINDOW_SIZE = (screen.get_width(), screen.get_height())
 
         elif event.type == KEYDOWN:
-            if event.key == K_RIGHT:
+            if event.key == K_RIGHT or event.key == K_d:
                 moving_right = True
-            elif event.key == K_LEFT:
+            elif event.key == K_LEFT or event.key == K_a:
                 moving_left = True
 
-            if event.key == K_UP:
+            if event.key == K_UP or event.key == K_w:
                 jumping = True
                 if air_timer < 6:
                     player_y_momentum = jump_speed
@@ -211,10 +211,10 @@ while True: # Game loop
                     print("ERROR, ERROR")
 
         elif event.type == KEYUP:
-            if event.key == K_RIGHT:
+            if event.key == K_RIGHT or event.key == K_d:
                 moving_right = False
 
-            elif event.key == K_LEFT:
+            elif event.key == K_LEFT or event.key == K_a:
                 moving_left = False
 
     # Handle Rendering
@@ -260,7 +260,7 @@ while True: # Game loop
                     print("Height: " + str(bg_obj[1][3]))
 
                     bg_obj_rect = pygame.Rect(bg_obj[1][0] - scroll[0] * bg_obj[0], bg_obj[1][1] - scroll[1] * bg_obj[0], bg_obj[1][2], bg_obj[1][3])
-                    pygame.draw.rect(display, colours.midgreen, bg_obj_rect)
+                    #pygame.draw.rect(display, colours.midgreen, bg_obj_rect)
 
                 elif tile == "1":
                     display.blit(dirt_img, (x * TILE_SIZE - scroll[0], y * TILE_SIZE - scroll[1]))
